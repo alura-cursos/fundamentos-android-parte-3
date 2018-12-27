@@ -1,7 +1,6 @@
 package br.com.alura.agenda.ui.activity;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,7 +22,7 @@ import static br.com.alura.agenda.ui.activity.ConstantesActivities.CHAVE_ALUNO;
 
 public class ListaAlunosActivity extends AppCompatActivity {
 
-    public static final String TITULO_APPBAR = "Lista de alunos";
+    private static final String TITULO_APPBAR = "Lista de alunos";
     private final AlunoDAO dao = new AlunoDAO();
     private ListaAlunosAdapter adapter;
 
@@ -59,14 +58,11 @@ public class ListaAlunosActivity extends AppCompatActivity {
                 .Builder(this)
                 .setTitle("Removendo aluno")
                 .setMessage("Tem certeza que quer remover o aluno?")
-                .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        AdapterView.AdapterContextMenuInfo menuInfo =
-                                (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
-                        Aluno alunoEscolhido = adapter.getItem(menuInfo.position);
-                        remove(alunoEscolhido);
-                    }
+                .setPositiveButton("Sim", (dialogInterface, i) -> {
+                    AdapterView.AdapterContextMenuInfo menuInfo =
+                            (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+                    Aluno alunoEscolhido = adapter.getItem(menuInfo.position);
+                    remove(alunoEscolhido);
                 })
                 .setNegativeButton("Não", null)
                 .show();
