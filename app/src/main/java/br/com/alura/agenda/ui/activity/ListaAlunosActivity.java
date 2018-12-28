@@ -1,7 +1,6 @@
 package br.com.alura.agenda.ui.activity;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -70,12 +69,7 @@ public class ListaAlunosActivity extends AppCompatActivity {
 
     private void configuraFabNovoAluno() {
         FloatingActionButton botaoNovoAluno = findViewById(R.id.activity_lista_alunos_fab_novo_aluno);
-        botaoNovoAluno.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                abreFormularioModoInsereAluno();
-            }
-        });
+        botaoNovoAluno.setOnClickListener(view -> abreFormularioModoInsereAluno());
     }
 
     private void abreFormularioModoInsereAluno() {
@@ -105,12 +99,9 @@ public class ListaAlunosActivity extends AppCompatActivity {
     }
 
     private void configuraListenerDeCliquePorItem(ListView listaDeAlunos) {
-        listaDeAlunos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int posicao, long id) {
-                Aluno alunoEscolhido = (Aluno) adapterView.getItemAtPosition(posicao);
-                abreFormularioModoEditaAluno(alunoEscolhido);
-            }
+        listaDeAlunos.setOnItemClickListener((adapterView, view, posicao, id) -> {
+            Aluno alunoEscolhido = (Aluno) adapterView.getItemAtPosition(posicao);
+            abreFormularioModoEditaAluno(alunoEscolhido);
         });
     }
 
