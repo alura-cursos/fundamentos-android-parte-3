@@ -6,21 +6,21 @@ Projeto Android que simula uma agenda de contatos de alunos e alunas.
 
 ## 🔨 Funcionalidades do projeto
 
-O projeto é capaz de cadastrar, editar e remover contatos com nome, telefone e e-mail e faz a listagem dos mesmos apresentando apenas o nome: 
+O projeto é capaz de cadastrar, editar e remover contatos com nome, telefone e e-mail e faz a listagem dos contatos apresentando nome e telefone cadastrados: 
 
 ![android3-projeto](https://user-images.githubusercontent.com/54920317/147663990-e959047b-dff6-49aa-aa24-5941cd6c8f71.gif)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
-O App foi desenvolvido no Android Studio com a API 28 e foi atualizado para a API 30 do Android. Segue abaixo as técnicas e tecnologias utilizadas:
+O App foi desenvolvido no Android Studio com a API 28 e foi atualizado para a API 30 do Android. Seguem abaixo as técnicas e tecnologias utilizadas:
 
-- `Layouts personalizados`: criação de layouts personalizados para exibição dos contatos
-- `BaseAdapter`: adapter que permite melhor personalização do layout
-- `Application`: entidade estável que mantém o estado global do aplicativo
-- `Dialog`: componenete que permite interação direta com o usuário
-- `Lint`: ferramenta para inspeção de código 
-- `Refatoração`: técnicas de refatoração para deixar o código mais enxuto e resumido
-- `AndroidX`: biblioteca utilizada pelo Android Framework
+- `Layouts personalizados`: criação de layouts personalizados para exibição dos contatos;
+- `BaseAdapter`: adapter que permite melhor personalização do layout;
+- `Application`: entidade estável que mantém o estado global do aplicativo;
+- `Dialog`: componenete que permite interação direta com o usuário;
+- `Lint`: ferramenta para inspeção de código;
+- `Refatoração`: técnicas de refatoração para deixar o código mais enxuto e resumido;
+- `AndroidX`: biblioteca utilizada pelo Android Framework.
 
 
 ## 📁 Acesso ao projeto
@@ -29,12 +29,13 @@ Você pode acessar o [código fonte](https://github.com/alura-cursos/fundamentos
 
 ## 🛠️ Abrir e rodar o projeto
 
-Após baixar o projeto, você pode abrir com o Android Studio. Para isso, na tela de launcher clique em:
+Após baixar o projeto, você pode abrir com o Android Studio. Para fazer isso, na tela de launcher, clique em:
 
-Open an Existing Project (ou alguma opção similar)
-Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
-Por fim clique em OK
-O Android Studio deve executar algumas tasks do Gradle para configurar o projeto, aguarde até finalizar. Ao finalizar as tasks, você pode executar o App 🏆
+- *Open an Existing Project* (do inglês, "abrir um projeto existente" ou alguma opção similar);
+- Procure o local onde o projeto está e o selecione (caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo);
+- Por fim, clique em OK.
+
+O Android Studio deve executar algumas tasks do Gradle para configurar o projeto, aguarde até finalizar. Ao finalizar as tasks, você pode executar o App. 🏆
 
 ## 📚 Mais informações do curso
 
